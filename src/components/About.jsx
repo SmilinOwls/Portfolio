@@ -33,12 +33,12 @@ function About() {
             <motion.div 
                 variants={textVariant(0.01)} 
             >
-                <p className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Introduction</p>
-                <h2 className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>Overview.</h2>
+                <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>Introduction</p>
+                <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>About me.</h2>
             </motion.div>
             <motion.p 
                 variants={fadeIn("up", "spring", 0.1, 1)} 
-                className="mt-3 text-secondary text-base leading-7 max-w-3xl"
+                className="mt-3 text-secondary text-base font-medium leading-7 max-w-3xl"
             >
                 I'm a skilled software developer with experience in TypeScript and
                 JavaScript, and expertise in frameworks like React, Node.js, and
@@ -48,7 +48,7 @@ function About() {
             </motion.p>
             <div className='mt-16 flex flex-wrap gap-5'>
                 {services.map((service, index) => (
-                    <ServiceCard index={index} service={service}/>
+                    <ServiceCard key={index} index={index} service={service}/>
                 ))}
             </div>
         </Wrapper>

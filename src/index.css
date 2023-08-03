@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  html{
+    @apply scroll-smooth;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
