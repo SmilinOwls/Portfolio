@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 function ExperienceCard({ index, experience }) {
     return (
         <VerticalTimelineElement
-            key={`experience-${index}`}
             contentArrowStyle={{ borderRight: "8px solid #fff" }}
             contentStyle={{ background: "#1d1836" }}
             className='text-white'

@@ -27,7 +27,6 @@ function Computer() {
             dpr={[1, 2]}
             frameloop="demand"
         >
-            <Loader />
             <Suspense fallback={<Loader />} >
                 <ambientLight intensity={0.5} />
                 <OrbitControls

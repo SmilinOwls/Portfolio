@@ -7,7 +7,7 @@ import Wrapper from './Wrapper';
 
 function ServiceCard({ index, service}) {
     return (
-        <Tilt key={index} className="w-full sm:w-[200px]">
+        <Tilt className="w-full sm:w-[200px]">
             <motion.div
                 variants={fadeIn("right","spring", index * 0.5, 1)}
                 className='w-full green-pink-gradient rounded-2xl p-1 shadow-card'
