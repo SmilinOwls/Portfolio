@@ -16,7 +16,7 @@ function ExperienceCard({ index, experience }) {
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             icon={
-                <img src={experience.icon} alt={experience.company_name} className='w-full h-full  object-contain p-1' />
+                <img src={experience.icon} alt={experience.company_name} className='w-full h-full object-contain p-1' />
             }
         >
             <motion.div
@@ -33,7 +33,7 @@ function ExperienceCard({ index, experience }) {
                 </div>
                 <ul className='mt-5 list-disc pl-10 space-y-2'>
                     {experience.points.map((point, idx) => (
-                        <li key={`experience-${index}-point-${idx}`} className='text-white-100 text-sm font-medium tracking-wider'>
+                        <li key={`experience_${index}-point_${idx}`} className='text-white-100 text-sm font-medium tracking-wider'>
                             {point}
                         </li>
                     ))}

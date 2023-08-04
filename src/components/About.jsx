@@ -17,7 +17,7 @@ function ServiceCard({ index, service}) {
                 >
                     <img
                         src={service.icon}
-                        alt="icon"
+                        alt="service_icon"
                         className='w-16 h-16 object-contain'
                     />
                     <h3 className='text-white-100 text-lg font-bold text-center'> {service.title} </h3>
