@@ -22,7 +22,7 @@ function ProjectCard({ index, project }) {
           />
           <div className='absolute top-3 right-3'>
             <div 
-              className='black-gradient w-10 h-10 p-1 rounded-full flex justify-center items-center cursor-pointer z-0 hover:z-1 hover:scale-100'
+              className='black-gradient w-10 h-10 p-1 rounded-full flex justify-center items-center cursor-pointer'
               onClick={() => window.open(project.source_code_link, "_blank")}
             >
               <img
@@ -58,7 +58,7 @@ function Project() {
   return (
     <Wrapper idName="project">
       <motion.div
-        variants={textVariant(0.01)}
+        variants={textVariant(1)}
       >
         <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>My work</p>
         <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Projects.</h2>
