@@ -21,19 +21,19 @@ function ExperienceCard({ index, experience }) {
         >
             <motion.div
                 variants={fadeIn('up', 'spring', index*0.5, 1)}
-                className='flex flex-col gap-5 bg-transparent'
+                className='flex flex-col gap-5 bg-transparent rounded-3xl'
             >
-                <div>
+                <div className='space-y-1'>
                     <h3 className='text-white text-xl font-bold tracking-wide'>{experience.title}</h3>
                     <p
-                        className='mt-1 text-secondary text-base font-base leading-3'
+                        className='mt-1 text-secondary text-base font-medium'
                     >
                         {experience.company_name}
                     </p>
                 </div>
                 <ul className='mt-5 list-disc pl-10 space-y-2'>
                     {experience.points.map((point, idx) => (
-                        <li key={`experience_${index}-point_${idx}`} className='text-white-100 text-sm font-medium tracking-wider'>
+                        <li key={`experience_${index}-point_${idx}`} className='text-white-100 text-sm font-medium tracking-wider leading-5'>
                             {point}
                         </li>
                     ))}
@@ -46,7 +46,7 @@ function ExperienceCard({ index, experience }) {
 function Experience() {
     return (
         <Wrapper idName="work">
-            <motion.div variants={textVariant(0.01)}>
+            <motion.div variants={textVariant(1)}>
                 <p className='text-center sm:text-lg text-sm text-secondary uppercase tracking-wider'>What I have got so far</p>
                 <h2 className='text-center text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Work Experience.</h2>
             </motion.div>

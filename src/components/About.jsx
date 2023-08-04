@@ -31,7 +31,7 @@ function About() {
     return (
         <Wrapper idName="about">
             <motion.div 
-                variants={textVariant(0.01)} 
+                variants={textVariant(1)} 
             >
                 <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>Introduction</p>
                 <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>About me.</h2>
