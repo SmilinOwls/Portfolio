@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../../components/About';
+import Contact from '../../components/Contact';
 import Experience from '../../components/Experience';
 import Feedback from '../../components/Feedback';
 import Project from '../../components/Project';
@@ -13,6 +14,7 @@ function Home() {
       <Tech/>
       <Project/>
       <Feedback/>
+      <Contact/>
     </>
   )
 }

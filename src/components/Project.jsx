@@ -64,7 +64,7 @@ function Project() {
         <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Projects.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("up", "spring", 0.1, 1)}
+        variants={fadeIn("up", "spring", 0.5, 1)}
         className="mt-3 text-secondary text-base font-medium leading-7 max-w-3xl"
       >
         Following projects showcases my skills and experience through
