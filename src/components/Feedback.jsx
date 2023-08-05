@@ -42,7 +42,7 @@ function Feedback() {
                     className='bg-tertiary min-h-[270px] w-full text-center p-5 rounded-3xl'
                 >
                     <motion.div
-                        variants={textVariant(3)}
+                        variants={textVariant(2)}
                     >
                         <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>What others review</p>
                         <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Testimonial.</h2>
