@@ -91,9 +91,11 @@ function Contact() {
                         </button>
                     </form>
                 </motion.div>
-                <div className='w-full'>
+                <motion.div 
+                    variants={slideIn('right','tween',2,1)}
+                    className='w-full xl:h-auto h-[460px] xl:-mt-3 -mt-32'>
                     <Earth />
-                </div>
+                </motion.div>
             </div>
 
         </Wrapper>
