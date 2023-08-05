@@ -95,16 +95,17 @@ function Contact() {
                     </motion.div>
                     <motion.div
                         variants={slideIn('right', 'tween', 2, 1)}
-                        className='w-full xl:h-auto h-[460px] xl:-mt-3 -mt-32'>
+                        className='w-full xl:h-auto h-[520px] xl:-mt-3 -mt-32'>
                         <Earth />
                     </motion.div>
                 </div>
                 <motion.div
                     variants={slideIn('down', 'spring', 0.1, 2)}
-                    className='absolute w-full h-full z-[-1] top-0 left-0'
+                    className='absolute w-full h-full z-[-1] top-0 right-0'
                 >
-                    <Star />
+                    <Star/>
                 </motion.div>
+                
             </div>
         </Wrapper>
     )
