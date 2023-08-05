@@ -21,7 +21,7 @@ function ExperienceCard({ index, experience }) {
         >
             <motion.div
                 variants={fadeIn('up', 'spring', index*0.5, 1)}
-                className='flex flex-col gap-5 bg-transparent rounded-3xl'
+                className='flex flex-col gap-5 bg-transparent'
             >
                 <div className='space-y-1'>
                     <h3 className='text-white text-xl font-bold tracking-wide'>{experience.title}</h3>
