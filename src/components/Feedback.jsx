@@ -7,7 +7,7 @@ import Wrapper from './Wrapper';
 function FeedbackCard({ index, feedback }) {
     return (
         <motion.div
-            variants={fadeIn('up', 'spring', index * 0.5, 1)}
+            variants={fadeIn('up', 'spring', index * 0.5 + 1, 1)}
             className='w-full sm:w-[320px] p-5 bg-black-200 rounded-2xl'
         >
             <p className='text-white font-bold text-[36px]'>"</p>
@@ -38,11 +38,11 @@ function Feedback() {
         <Wrapper idName="feedback" >
             <div className='mt-2'>
                 <motion.div
-                    variants={fadeIn("left", "spring", 0.5, 1)}
+                    variants={fadeIn("left", "spring", 0.25, 1)}
                     className='bg-tertiary min-h-[270px] w-full text-center p-5 rounded-3xl'
                 >
                     <motion.div
-                        variants={textVariant(2)}
+                        variants={textVariant(0.5)}
                     >
                         <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>What others review</p>
                         <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Testimonial.</h2>
