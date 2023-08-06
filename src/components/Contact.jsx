@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '../utils/motion';
 import Wrapper from './Wrapper';
-import EarthStar from './canvas/EarthStar';
+import { EarthStar } from './canvas';
 
 function Contact() {
     const [form, setForm] = useState({

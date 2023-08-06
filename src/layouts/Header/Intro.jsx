@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Computer from '../../components/canvas/Computer';
+import {Computer} from '../../components/canvas';
 
 function Intro() {
     return (
