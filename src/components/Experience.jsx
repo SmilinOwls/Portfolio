@@ -20,7 +20,7 @@ function ExperienceCard({ index, experience }) {
             }
         >
             <motion.div
-                variants={fadeIn('up', 'spring', index*0.5, 1)}
+                variants={fadeIn('up', 'spring', index*0.5 + 1, 1)}
                 className='flex flex-col gap-5 bg-transparent'
             >
                 <div className='space-y-1'>
@@ -46,7 +46,7 @@ function ExperienceCard({ index, experience }) {
 function Experience() {
     return (
         <Wrapper idName="work">
-            <motion.div variants={textVariant(1)}>
+            <motion.div variants={textVariant(0.5)}>
                 <p className='text-center sm:text-lg text-sm text-secondary uppercase tracking-wider'>What I have got so far</p>
                 <h2 className='text-center text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Work Experience.</h2>
             </motion.div>

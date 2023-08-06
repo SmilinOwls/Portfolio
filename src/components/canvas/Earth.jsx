@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { Center, OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import Loader from '../Loader';
 
 function Earth() {
@@ -24,10 +24,11 @@ function Earth() {
                     <primitive
                         object={earth.scene}
                         scale={2.5}
-                        postion={[0,0,0]}
-                        rotation={[0,0,0]}
+                        postion={[0, 0, 0]}
+                        rotation={[0, 0, 0]}
                     />
                 </mesh>
+
                 <Preload all />
             </Suspense>
         </Canvas>

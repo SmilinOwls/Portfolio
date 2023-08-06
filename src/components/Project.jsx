@@ -11,7 +11,7 @@ function ProjectCard({ index, project }) {
   return (
     <Tilt className='w-full sm:w-[360px] max-w-[380px]'>
       <motion.div
-        variants={fadeIn('up', 'spring', index * 0.5, 1)}
+        variants={fadeIn('up', 'spring', index * 0.5 + 1, 1)}
         className='w-full p-5 bg-tertiary rounded-2xl'
       >
         <div className='relative w-full h-[250px]'>
@@ -58,13 +58,13 @@ function Project() {
   return (
     <Wrapper idName="project">
       <motion.div
-        variants={textVariant(1)}
+        variants={textVariant(0.5)}
       >
         <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>My work</p>
         <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Projects.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("up", "spring", 0.5, 1)}
+        variants={fadeIn("up", "spring", 1, 1)}
         className="mt-3 text-secondary text-base font-medium leading-7 max-w-3xl"
       >
         Following projects showcases my skills and experience through

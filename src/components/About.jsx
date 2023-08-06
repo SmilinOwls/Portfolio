@@ -9,11 +9,11 @@ function ServiceCard({ index, service}) {
     return (
         <Tilt className="w-full sm:w-[200px]">
             <motion.div
-                variants={fadeIn("right","spring", index * 0.5, 1)}
+                variants={fadeIn("right","spring", index * 0.5 + 1, 1)}
                 className='w-full green-pink-gradient rounded-2xl p-1 shadow-card'
             >
                 <div
-                    className='bg-tertiary flex flex-col items-center justify-around px-10 py-5 rounded-2xl'
+                    className='bg-tertiary flex flex-col items-center justify-around px-8 py-5 rounded-2xl'
                 >
                     <img
                         src={service.icon}
@@ -31,13 +31,13 @@ function About() {
     return (
         <Wrapper idName="about">
             <motion.div 
-                variants={textVariant(1)} 
+                variants={textVariant(0.5)} 
             >
                 <p className='sm:text-lg text-sm text-secondary uppercase tracking-wider'>Introduction</p>
                 <h2 className='text-white font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>About me.</h2>
             </motion.div>
             <motion.p 
-                variants={fadeIn("up", "spring", 0.1, 1)} 
+                variants={fadeIn("up", "spring", 1, 1)} 
                 className="mt-3 text-secondary text-base font-medium leading-7 max-w-3xl"
             >
                 I'm a skilled software developer with experience in TypeScript and
