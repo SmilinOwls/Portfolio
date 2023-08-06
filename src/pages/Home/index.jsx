@@ -1,10 +1,12 @@
 import React from 'react';
-import About from '../../components/About';
-import Contact from '../../components/Contact';
-import Experience from '../../components/Experience';
-import Feedback from '../../components/Feedback';
-import Project from '../../components/Project';
-import Tech from '../../components/Tech';
+import { 
+  About, 
+  Contact, 
+  Experience, 
+  Feedback, 
+  Project, 
+  Tech
+} from '../../components';
 
 function Home() {
   return (
