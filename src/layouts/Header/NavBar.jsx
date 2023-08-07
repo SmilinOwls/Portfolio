@@ -58,9 +58,9 @@ function NavBar() {
                         onClick={() => setToggle(!toggle)}
                     />
                     <div
-                        className={`p-5 black-gradient absolute top-20 right-0 mx-3 my-2 z-10 rounded-xl ${!toggle ? "hidden" : "flex"}`}
+                        className={`p-5 black-gradient absolute top-20 right-3 mx-auto z-10 rounded-xl ${!toggle ? "hidden" : "flex"}`}
                     >
-                        <ul className="list-none flex justify-end items-start flex-1 gap-3 flex-col">
+                        <ul className="list-none space-y-3">
                             {navLinks.map((nav) => (
                                 <li
                                     key={nav.id}
