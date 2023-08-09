@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  About, 
-  Contact, 
-  Experience, 
-  Feedback, 
-  Project, 
+import {
+  About,
+  Contact,
+  Experience,
+  Feedback,
+  Project,
   Tech
 } from '../../components';
 
@@ -13,9 +13,9 @@ function Home() {
     <>
       <About />
       <Experience />
-      <Tech/>
-      <Project/>
-      <Feedback/>
+      <Tech />
+      <Project />
+      <Feedback />
       <Contact/>
     </>
   )
