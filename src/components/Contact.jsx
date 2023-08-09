@@ -125,16 +125,16 @@ function ContactForm() {
     )
 }
 
-function Contact(){
+function Contact() {
     return (
         <div className='flex flex-1 xl:flex-row flex-col-reverse gap-8 overflow-hidden -mt-3 sm:-mt-32'>
-        <ContactForm />
-        <motion.div
-          variants={slideIn('right', 'tween', 0.5, 1)}
-          className='w-full xl:h-auto h-[480px]'>
-          <EarthStar />
-        </motion.div>
-      </div>
+            <ContactForm />
+            <motion.div
+                variants={slideIn('right', 'tween', 0.5, 1)}
+                className='w-full xl:h-auto h-[480px]'>
+                <EarthStar />
+            </motion.div>
+        </div>
     )
 }
 
