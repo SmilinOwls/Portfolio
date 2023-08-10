@@ -1,22 +1,24 @@
 import React from 'react';
 import {
+  Intro,
   About,
   Contact,
   Experience,
   Feedback,
   Project,
   Tech
-} from '../../components';
+} from './sections';
 
 function Home() {
   return (
     <>
+      <Intro />
       <About />
       <Experience />
       <Tech />
       <Project />
       <Feedback />
-      <Contact/>
+      <Contact />
     </>
   )
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '../utils/motion';
-import Wrapper from './Wrapper';
-import { EarthStar } from './canvas';
+import { slideIn, textVariant } from '../../../utils/motion';
+import Wrapper from '../../../components/Wrapper';
+import { EarthStar } from '../../../components/canvas';
 
 function ContactForm() {
     const [form, setForm] = useState({
@@ -130,7 +130,7 @@ function Contact() {
         <div className='flex flex-1 xl:flex-row flex-col-reverse gap-8 overflow-hidden -mt-3 sm:-mt-32'>
             <ContactForm />
             <motion.div
-                variants={slideIn('right', 'tween', 0.5, 1)}
+                variants={slideIn('right', 'tween', 0.1, 1)}
                 className='w-full xl:h-auto h-[480px]'>
                 <EarthStar />
             </motion.div>

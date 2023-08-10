@@ -1,11 +1,11 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '../utils/motion';
-import { projects } from '../constants';
-import Wrapper from './Wrapper';
+import { textVariant, fadeIn } from '../../../utils/motion';
+import { projects } from '../../../constants';
+import Wrapper from '../../../components/Wrapper';
 
-import { github } from '../assets';
+import { github } from '../../../assets';
 
 function ProjectCard({ index, project }) {
   return (

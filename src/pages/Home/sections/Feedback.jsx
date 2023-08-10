@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '../utils/motion';
-import { testimonials } from '../constants';
-import Wrapper from './Wrapper';
+import { textVariant, fadeIn } from '../../../utils/motion';
+import { testimonials } from '../../../constants';
+import Wrapper from '../../../components/Wrapper';
 
 function FeedbackCard({ index, feedback }) {
     return (

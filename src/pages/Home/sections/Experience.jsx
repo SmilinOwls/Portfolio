@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '../utils/motion';
-import { experiences } from '../constants';
-import Wrapper from './Wrapper';
+import { textVariant, fadeIn } from '../../../utils/motion';
+import { experiences } from '../../../constants';
+import Wrapper from '../../../components/Wrapper';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
 

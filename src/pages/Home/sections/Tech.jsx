@@ -1,7 +1,7 @@
 import React from 'react';
-import { technologies } from '../constants';
-import Wrapper from './Wrapper';
-import { Ball } from './canvas';
+import { technologies } from '../../../constants';
+import Wrapper from '../../../components/Wrapper';
+import { Ball } from '../../../components/canvas';
 
 function Tech() {
     return (

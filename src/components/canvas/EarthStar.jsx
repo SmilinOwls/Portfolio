@@ -8,7 +8,7 @@ function EarthStar() {
         <div className='relative z-0 w-full h-full'>
             <Earth />
             <motion.div
-                variants={slideIn('down', 'spring', 0.1, 2)}
+                variants={slideIn('down', 'spring', 1, 2)}
                 className='absolute w-full h-full z-[-1] top-0 right-0'
             >
                 <Star />
