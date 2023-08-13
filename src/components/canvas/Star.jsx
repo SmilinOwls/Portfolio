@@ -11,8 +11,9 @@ function StarPoint() {
         points.current.rotation.y += delta / 5;
 
     });
+
     return (
-        <group rotation={[0, 0, -Math.PI / 3]}>
+        <group rotation={[0, 0, 2*Math.PI / 3]}>
             <Points
                 ref={points}
                 positions={sphere}

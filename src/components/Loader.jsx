@@ -19,7 +19,7 @@ function Loader() {
         </div>
         <p className="text-xl text-[#F1F1F1] font-bold mt-4"
         >
-            {progress.toFixed(2)}%
+            {progress.toFixed(2)} %
         </p>
     </Html>
   )
