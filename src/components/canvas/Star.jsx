@@ -5,7 +5,7 @@ import { random } from 'maath';
 
 function StarPoint() {
     const points = useRef();
-    const sphere = random.inSphere(new Float32Array(5001), { radius: 1.5 });
+    const sphere = random.inSphere(new Float32Array(4998), { radius: 1.3 });
     useFrame((state, delta) => {
         // points.current.rotation.x -= delta / 10;
         points.current.rotation.y += delta / 5;
